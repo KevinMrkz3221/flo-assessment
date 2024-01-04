@@ -58,6 +58,7 @@ THIRD_APPS = [
 
 OWN_APPS = [
     'task',
+    'product'
 ]
 
 INSTALLED_APPS = BASE_APPS + THIRD_APPS + OWN_APPS

@@ -12,6 +12,7 @@ class Task(models.Model):
         db_table = 'task'
         verbose_name = 'Task'
         verbose_name_plural = 'Tasks'
+        unique_together = ['title', 'description']
 
     def __str__(self) -> str:
         return self.title
