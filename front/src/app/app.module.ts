@@ -31,7 +31,11 @@ import { ProductComponent } from './components/product/product.component';
 import { ProductsComponent } from './pages/products/products.component';
 import { MyProductsComponent } from './pages/my-products/my-products.component';
 import { MyProductComponent } from './components/my-product/my-product.component';
-import {MatExpansionModule} from '@angular/material/expansion'; 
+import {MatExpansionModule} from '@angular/material/expansion';
+import { ProductAndTaskComponent } from './components/product-and-task/product-and-task.component';
+import { ProductsAndTasksComponent } from './pages/products-and-tasks/products-and-tasks.component'; 
+import {MatAutocompleteModule} from '@angular/material/autocomplete'; 
+import { MatSelectModule } from '@angular/material/select';
 @NgModule({
   declarations: [
     AppComponent,
@@ -44,7 +48,9 @@ import {MatExpansionModule} from '@angular/material/expansion';
     ProductComponent,
     ProductsComponent,
     MyProductsComponent,
-    MyProductComponent
+    MyProductComponent,
+    ProductAndTaskComponent,
+    ProductsAndTasksComponent
   ],
   imports: [
     BrowserModule,
@@ -61,7 +67,9 @@ import {MatExpansionModule} from '@angular/material/expansion';
     MatButtonToggleModule,
     MatInputModule,
     MatFormFieldModule,
-    MatExpansionModule
+    MatExpansionModule,
+    MatAutocompleteModule,
+    MatSelectModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,1 +1,7 @@
-get http://localhost:8000/api/v1/tasks/
+POST http://127.0.0.1:8000/api/v1/products-n-tasks/
+Content-Type: application/json
+
+{
+  "product": 6,
+  "task": 32
+}

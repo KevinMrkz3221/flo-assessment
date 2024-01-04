@@ -1,0 +1,20 @@
+
+
+<mat-card>
+    <mat-card-header>
+        <h2>{{ productTask.task.title }} | {{ productTask.product.title }}</h2>
+    </mat-card-header>
+
+    <mat-card-subtitle>
+        <h3>${{ productTask.product.price }}</h3>
+    </mat-card-subtitle>
+    <mat-card-content class="producto">
+        <img mat-card-image src="{{ productTask.product.image }}" alt="Imagen del producto">
+        <p> {{ productTask.product.description }} </p>
+    </mat-card-content>
+    <mat-card-content>
+        <h4> Descripción de task</h4>
+        <p> {{ productTask.task.description }} </p>
+    </mat-card-content>
+    <mat-card-actions></mat-card-actions>
+</mat-card>

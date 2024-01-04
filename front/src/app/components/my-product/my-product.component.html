@@ -1,15 +1,28 @@
 <mat-expansion-panel hideToggle>
-    <mat-expansion-panel-header>
-      <mat-panel-title>
-        {{ product.title }}
-      </mat-panel-title>
-      <mat-panel-description>
-        {{ product.description | slice:0:25 }} ...
-      </mat-panel-description>
-    </mat-expansion-panel-header>
-    <div class="description">
-      <img src="{{ product.image }}" alt="Imagen del producto" width="15%">
-      <p>{{ product.description }}</p>
-    </div>
+  <mat-expansion-panel-header>
+    <mat-panel-title>
+      {{ product.title }}
+    </mat-panel-title>
+    <mat-panel-description>
+      {{ product.description | slice:0:25 }} ...
+    </mat-panel-description>
+  </mat-expansion-panel-header>
+  <div class="description">
+    <img src="{{ product.image }}" alt="Imagen del producto" width="15%">
+    <p>{{ product.description }}</p>
     
+  </div>
+  <mat-action-row>
+    <form (ngSubmit)="onSubmit()">
+
+      <mat-form-field>
+        <label for="task">Selecciona una Tarea:</label>
+        <select matNativeControl id="task" name="task" [(ngModel)]="newPTask.task">
+          <option *ngFor="let task of tasks" [ngValue]="task.id">{{task.title}}</option>
+        </select>
+      </mat-form-field>
+      <button mat-button color="primary" type="submit">Relacionar</button>
+    </form>
+
+  </mat-action-row>
 </mat-expansion-panel>

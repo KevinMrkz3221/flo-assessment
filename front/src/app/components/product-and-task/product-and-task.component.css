@@ -1,0 +1,21 @@
+mat-card{
+    margin:5px;
+    width: 25rem;
+}
+mat-card-subtitle{
+    text-align: right;
+    margin: 10px;
+}
+
+img{
+    justify-content: center;
+    width: 80%;
+}
+
+.producto{
+    display: flex;
+    justify-content: space-between;
+    p{
+        padding: 10px;
+    }
+}

@@ -1,0 +1,11 @@
+<header>
+    <mat-toolbar-row style="justify-content: right; ">
+        <a mat-raised-button color="primary" routerLink="/mis-productos">Volver</a>
+    </mat-toolbar-row>
+</header>
+
+<h3>Mis Productos + Task</h3>
+
+<section style="display: flex; flex-wrap: wrap; justify-content: flex-start; padding: 10px">
+    <app-product-and-task [productTask]="product" *ngFor="let product of productsTasks"></app-product-and-task>
+</section>
