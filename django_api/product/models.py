@@ -27,8 +27,12 @@ class Product(models.Model):
             # Retorna un HttpResponse con código 400 en caso de error de validación
 
 
-
+    def __str__(self) -> str:
+        return self.title
 
 class ProductAndTask(models.Model):
     product = models.ForeignKey(Product, on_delete= models.CASCADE)
     task = models.ForeignKey(Task, on_delete=models.CASCADE)
+
+    def __str__(self) -> str:
+        return f'{self.product.title} | {self.task.title}'

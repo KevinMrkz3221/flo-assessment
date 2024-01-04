@@ -43,6 +43,7 @@ export class MyProductComponent {
     this.productTask.createProduct(this.newPTask)
       .subscribe(response => {
         console.log('Respuesta del servidor:', response);
+        alert('Se relacionaron los elementos' );
       }, error => {
         console.error('Error en la solicitud POST:', error);
       });
