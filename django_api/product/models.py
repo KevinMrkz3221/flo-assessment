@@ -9,9 +9,9 @@ from task.models import Task
 
 class Product(models.Model):
     id_api = models.IntegerField(unique=True)
-    title = models.CharField(max_length=200)
+    title = models.CharField(max_length=200, unique=True)
     price = models.FloatField(validators=[MinValueValidator(1)])
-    description = models.TextField()
+    description = models.TextField(null=False, blank=False)
     image = models.CharField(max_length=400)
 
     def clean(self):
