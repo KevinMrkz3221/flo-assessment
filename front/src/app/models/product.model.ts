@@ -7,5 +7,10 @@ export interface Product {
 }
 
 export interface MyProduct {
-    
+    id?: number;
+    id_api: number;
+    title: string;
+    price: number;
+    description: string;
+    image: string;
 }

@@ -6,6 +6,7 @@ import { TasksComponent } from './pages/tasks/tasks.component';
 import { HistorialComponent } from './pages/historial/historial.component';
 import { UpdateTaskComponent } from './components/update-task/update-task.component';
 import { ProductsComponent } from './pages/products/products.component';
+import { MyProductsComponent } from './pages/my-products/my-products.component';
 
 const routes: Routes = [
   {
@@ -32,6 +33,11 @@ const routes: Routes = [
     title: 'Productos',
     path: 'productos',
     component: ProductsComponent
+  },
+  {
+    title: 'Mis Productos',
+    path: 'mis-productos',
+    component: MyProductsComponent
   }
 ];
 

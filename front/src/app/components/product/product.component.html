@@ -1,8 +1,12 @@
 <mat-card>
+    <mat-card-header>
+        <button mat-icon-button color="warn" aria-label="Example icon button with a heart icon" (click)="onHeart()">
+            <mat-icon>favorite</mat-icon>
+        </button>
+        <h2>{{product.title}}</h2>
+    </mat-card-header>
     <a href="">
-        <mat-card-header>
-            <h2>{{product.title}}</h2>
-        </mat-card-header>
+        
         <mat-card-subtitle>
             <h3>${{ product.price }}</h3>
         </mat-card-subtitle>

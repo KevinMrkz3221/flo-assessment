@@ -8,7 +8,7 @@ from task.models import Task
 # Create your models here.
 
 class Product(models.Model):
-    id_api = models.IntegerField()
+    id_api = models.IntegerField(unique=True)
     title = models.CharField(max_length=200)
     price = models.FloatField(validators=[MinValueValidator(1)])
     description = models.TextField()
@@ -26,7 +26,6 @@ class Product(models.Model):
             # Imprime "fail" sin mostrar el mensaje de error específico
             print("fail")
             # Retorna un HttpResponse con código 400 en caso de error de validación
-            return HttpResponse("Error al guardar el producto", status=400)
 
 
 

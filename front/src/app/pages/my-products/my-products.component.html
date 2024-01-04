@@ -1,1 +1,24 @@
-<p>my-products works!</p>
+<header>
+    <mat-toolbar-row style="justify-content: right; ">
+        <a mat-raised-button color="primary" routerLink="/productos">Volver</a>
+    </mat-toolbar-row>
+</header>
+
+<h3>Mis Productos</h3>
+
+<section style="display: flex; flex-wrap: wrap; justify-content: flex-start; padding: 10px">
+    
+    <mat-accordion>
+        <mat-expansion-panel hideToggle>
+            <mat-expansion-panel-header>
+                <mat-panel-title>
+                    Titulo
+                </mat-panel-title>
+                <mat-panel-description>
+                    Descripción corta
+                </mat-panel-description>
+            </mat-expansion-panel-header>
+        </mat-expansion-panel>
+        <app-my-product [product]="product" *ngFor="let product of products"></app-my-product>
+    </mat-accordion>
+</section>

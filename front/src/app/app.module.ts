@@ -30,7 +30,8 @@ import { UpdateTaskComponent } from './components/update-task/update-task.compon
 import { ProductComponent } from './components/product/product.component';
 import { ProductsComponent } from './pages/products/products.component';
 import { MyProductsComponent } from './pages/my-products/my-products.component';
-
+import { MyProductComponent } from './components/my-product/my-product.component';
+import {MatExpansionModule} from '@angular/material/expansion'; 
 @NgModule({
   declarations: [
     AppComponent,
@@ -42,7 +43,8 @@ import { MyProductsComponent } from './pages/my-products/my-products.component';
     UpdateTaskComponent,
     ProductComponent,
     ProductsComponent,
-    MyProductsComponent
+    MyProductsComponent,
+    MyProductComponent
   ],
   imports: [
     BrowserModule,
@@ -58,7 +60,8 @@ import { MyProductsComponent } from './pages/my-products/my-products.component';
     MatGridListModule,
     MatButtonToggleModule,
     MatInputModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    MatExpansionModule
   ],
   providers: [],
   bootstrap: [AppComponent]

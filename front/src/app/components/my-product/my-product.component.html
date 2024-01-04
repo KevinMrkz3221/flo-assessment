@@ -1,0 +1,15 @@
+<mat-expansion-panel hideToggle>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        {{ product.title }}
+      </mat-panel-title>
+      <mat-panel-description>
+        {{ product.description | slice:0:25 }} ...
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+    <div class="description">
+      <img src="{{ product.image }}" alt="Imagen del producto" width="15%">
+      <p>{{ product.description }}</p>
+    </div>
+    
+</mat-expansion-panel>
