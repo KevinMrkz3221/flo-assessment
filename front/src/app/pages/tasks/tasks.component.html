@@ -1,0 +1,10 @@
+<header>
+    <mat-toolbar-row style="justify-content: right; ">
+        <a mat-raised-button color="primary" routerLink="/new-task">Nuevo Task</a>
+        <a mat-raised-button color="basic" routerLink="/tasks/completado">Historial</a>
+    </mat-toolbar-row>
+</header>
+
+<section style="display: flex; flex-wrap: wrap; justify-content: flex-start; padding: 10px">
+    <app-task [task]="task" *ngFor="let task of tasks"></app-task>
+</section>

@@ -1,0 +1,22 @@
+<header>
+    <mat-toolbar-row style="justify-content: right; ">
+        <a mat-raised-button color="primary" routerLink="/tasks">Volver</a>
+        <a mat-raised-button color="basic" routerLink="/tasks/completado">Historial</a>
+    </mat-toolbar-row>
+</header>
+
+<form (ngSubmit)="onSubmit()">
+    <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Titulo</mat-label>
+        <input matInput placeholder="Nota" name="title" [(ngModel)]="newTask.title" required>
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+        <mat-label>Descripción</mat-label>
+        <textarea matInput placeholder="Ex. It makes me feel..." name="description" [(ngModel)]="newTask.description" required rows="15"></textarea>
+    </mat-form-field>
+
+
+    <button type="submit" mat-raised-button color="primary">Enviar</button>
+</form>
+

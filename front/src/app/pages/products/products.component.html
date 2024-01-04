@@ -1,0 +1,9 @@
+<header>
+    <mat-toolbar-row style="justify-content: right; ">
+        <a mat-raised-button color="primary" routerLink="/new-task">Mis Productos</a>
+    </mat-toolbar-row>
+</header>
+
+<section style="display: flex; flex-wrap: wrap; justify-content: flex-start; padding: 10px">
+    <app-product [product]="product" *ngFor="let product of products"></app-product>
+</section>

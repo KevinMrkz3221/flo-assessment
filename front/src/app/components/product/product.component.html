@@ -1,0 +1,14 @@
+<mat-card>
+    <a href="">
+        <mat-card-header>
+            <h2>{{product.title}}</h2>
+        </mat-card-header>
+        <mat-card-subtitle>
+            <h3>${{ product.price }}</h3>
+        </mat-card-subtitle>
+        <mat-card-content>
+            <img mat-card-image src="{{ product.images[0]}}" alt="Imagen del producto">
+        </mat-card-content>
+    </a>
+    <mat-card-actions></mat-card-actions>
+</mat-card>

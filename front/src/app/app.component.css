@@ -1,0 +1,8 @@
+.example-spacer {
+    flex: 1 1 auto;
+  }
+
+main{
+  padding-left: 15%;
+  padding-right: 15%;
+}
